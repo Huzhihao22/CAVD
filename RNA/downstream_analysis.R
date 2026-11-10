@@ -377,7 +377,7 @@ cellChat_normal <- filterCommunication(cellChat_normal, min.cells = 5)
 cellChat_normal <- computeCommunProbPathway(cellChat_normal)
 cellChat_normal <- aggregateNet(cellChat_normal)
 cellChat_normal <- netAnalysis_computeCentrality(cellChat_normal, slot.name = "netP")
-object.list <- list(normal = cellChat_normal, disease = cellChat_disease_down2_10k)
+object.list <- list(normal = cellChat_normal, disease = cellChat_disease)
 cellchat <- mergeCellChat(object.list, add.names = names(object.list))
 
 #绘制Role
