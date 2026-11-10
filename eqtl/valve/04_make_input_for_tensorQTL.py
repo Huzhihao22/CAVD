@@ -17,7 +17,7 @@ celltype = ["Endo_C1_NETA1","Endo_C2_HAPLN1","Endo_C4_PI16","M_DC_CD1C","M_Macro
              "T_CD4_Memory_GPR183","T_CD4_TH17_CCL20","T_CD8_EM_CD69","T_CD8_EM_DUSP4",
              "T_STR_HSPA1A","T_Trans_TXNIP","VIC_C0_POSTN","VIC_C1_MYH11",
              "VIC_C2_NEAT1","VIC_C3_RPS11","VIC_C4_C7","VIC_C5_ISG15",
-             "VIC_C6_PRELP","VIC_C7_IL6","VIC_C9_S100B"]
+             "VIC_C6_PRELP","VIC_C7_LIF","VIC_C9_S100B"]
 for cell in celltype:
     print(f'processing_{cell}')
     norm_expr = pd.read_csv(f'/path/{cell}.csv', index_col=0)
